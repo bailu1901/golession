@@ -12,7 +12,8 @@ func main() {
 	
 	//lesson.ForTest()
 
-	lesson.IfTest()
+	//lesson.IfTest()
 
+	lesson.SliceTest()
 
 	}
