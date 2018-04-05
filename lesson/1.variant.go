@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+const MAX_NUM uint32 = 10
+
 func VariantTest() {
 	var a string = "123"
 	fmt.Println(a)

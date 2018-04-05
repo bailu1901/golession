@@ -8,7 +8,11 @@ import (
 func main() {
 	fmt.Println("hello world")
 
-	lesson.SwitchTest()
+	//lesson.VariantTest()
+	
+	//lesson.ForTest()
 
-	//lesson.
-}
+	lesson.IfTest()
+
+
+	}
