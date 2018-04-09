@@ -1,5 +1,7 @@
 package main
 
+import lesson "golesson/misc"
+
 //"golesson/lesson"
 //"golesson/advance"
 //"golesson/thread"
@@ -48,4 +50,6 @@ func main() {
 	//lesson.JsonTest()
 
 	//lesson.TimeTest()
+
+	lesson.WaitGroupTest()
 }
