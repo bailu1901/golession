@@ -1,6 +1,6 @@
 package main
 
-import lesson "golesson/misc"
+import "golesson/lesson"
 
 //"golesson/lesson"
 //"golesson/advance"
@@ -51,5 +51,7 @@ func main() {
 
 	//lesson.TimeTest()
 
-	lesson.WaitGroupTest()
+	//lesson.WaitGroupTest()
+
+	lesson.GoRoutineTest()
 }
