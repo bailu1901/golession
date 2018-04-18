@@ -1,23 +1,32 @@
 {
-    "version": "0.1.0",
-    "command": "go",
-    "isShellCommand": true,
-    //"showOutput": "silent",
-    "options": {
-        "env": {
-            "GOPATH": "E://GOPATH"
-        }
-    },
+    "version": "2.0.0",
+    
+
+    
+    
     "tasks": [
         {
-            "taskName": "install",
-            "args": [ "-v", "./..."],
-            "isBuildCommand": true
+            "label": "build",
+            "type": "shell",
+            "command": "go build",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": [
+                "$go"
+            ]
         },
         {
-            "taskName": "test",
+            "label": "install",
             "args": [ "-v", "./..."],
-            "isTestCommand": true
+            "command": "go",
+            "type": "shell",
+        },
+        {
+            "label": "test",
+            "command": "go",
+            "args": [ "-v", "./..."],
+            "type": "shell",
         }
     ]
 }
