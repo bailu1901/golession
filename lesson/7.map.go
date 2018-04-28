@@ -1,32 +1,31 @@
 package lesson
 
-import(
+import (
 	"fmt"
-	
 )
 
-func MapTest(){
+func MapTest() {
 
 	m := make(map[string]int)
 
-	m["a"]=1
-	m["b"]=2
-	m["c"]=3
+	m["a"] = 1
+	m["b"] = 2
+	m["c"] = 3
 
 	fmt.Println(m)
 
-	fmt.Println("len=",len(m))
-	delete(m,"a")
+	fmt.Println("len=", len(m))
+	delete(m, "a")
 
-	if v,has :=m["a"];!has {
-		fmt.Println(v,has)
+	if v, has := m["a"]; !has {
+		fmt.Println(v, has)
 	}
-	
-	t:=m["b"]
+
+	t := m["b"]
 	fmt.Println(t)
 
 	fmt.Println(m)
 
-	m1 := map[int]string {1:"1",2:"2"}
+	m1 := map[int]string{1: "1", 2: "2"}
 	fmt.Println(m1)
 }

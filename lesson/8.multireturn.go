@@ -1,14 +1,13 @@
 package lesson
 
-import(
+import (
 	"fmt"
-	
 )
 
-func test()(int,string){
-	return 1,"a"
+func test() (int, string) {
+	return 1, "a"
 }
 
-func MultiReturnTest(){
+func MultiReturnTest() {
 	fmt.Println(test())
 }
